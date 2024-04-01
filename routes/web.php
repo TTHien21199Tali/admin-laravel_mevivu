@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\Blog\BlogController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-
+/* xây dựng route theo cách củ
 Route::controller(App\Http\Controllers\Blog\BlogController::class)
     ->prefix('/')
     ->as('post.')
@@ -21,3 +21,8 @@ Route::controller(App\Http\Controllers\Blog\BlogController::class)
         Route::get('/', 'index')->name('index');
         Route::get('/{slug}', 'showPost')->name('show');
     });
+*/
+Route::prefix('/')->as('post.')->group(function () {
+    Route::get('/', [BlogController::class, 'index'])->name('index');
+    Route::get('/{slug}', [BlogController::class, 'showPost'])->name('show');
+});

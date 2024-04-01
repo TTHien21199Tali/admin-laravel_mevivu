@@ -22,9 +22,11 @@
                                             <h4 class="card-title title-text">{{ $post->title }}</h4>
                                         </a>
                                         <p>Ngày viết: {{ $post->created_at->format('d/m/Y') }}</p>
-                                        <p class="text-muted">{{ $post->excerpt }}</p>
+                                        <p class="text-muted">{!! $post->excerpt !!}</p>
+                                        
                                         @foreach ($post->categories as $category)
                                         @endforeach
+                                      
                                     </div>
                                 </div>
                             </div>

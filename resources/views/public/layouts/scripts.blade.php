@@ -1,40 +1,28 @@
-<script src="{{ asset('public/assets/js/jquery-3.6.4.min.js') }}"></script>
-<script src="{{ asset('public/libs/tabler/dist/js/tabler.min.js') }}"></script>
-<script src="{{ asset('public/assets/js/jquery-ui.1.12.1.js') }}"></script>
-<script defer src="{{ asset('public/libs/tabler/dist/litepicker/dist/litepicker.js') }}"></script>
-{{-- <script defer src="{{ asset('public/libs/tabler/dist/fslightbox/index.js') }}"></script> --}}
-<script src="{{ asset('public/libs/jquery-toast-plugin/jquery.toast.min.js') }}"></script>
-<script src="{{ asset('public/libs/Parsley.js-2.9.2/parsley.min.js') }}"></script>
-<script src="{{ asset('public/libs/swiper/js/swiper.min.js') }}"></script>
-<script src="{{ asset('public/libs/fancybox/js/fancybox.umd.js') }}"></script>
-<script src="{{ asset('/public/libs/jquery-throttle-debounce/jquery.ba-throttle-debounce.min.js') }}"></script>
 
-@stack('libs-js')
+{{-- <!-- JavaScript Libraries -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
 
-<script type="module" src="{{ asset('public/admin/assets/js/i18n.js') }}"></script>
-<script src="{{ asset('public/assets/js/scripts.js') }}"></script>
-<script src="{{ asset('public/admin/assets/js/setup.js') }}"></script>
+<script src="{{ asset('lib/easing/easing.min.js') }}"></script>
+<script src="{{ asset('lib/waypoints/waypoints.min.js') }}"></script>
+<script src="{{ asset('lib/owlcarousel/owl.carousel.min.js') }}"></script>
 
+<!-- Template Javascript -->
+<script src="{{ asset('js/main.js') }}"></script> --}}
 
-<x-input type="hidden" name="route_product_search" :value="route('product.search')" />
-
-<script>
-    $(document).on('keyup', '#inputSearchProduct', $.debounce(1000, function (e) {
-        var url = $('input[name="route_product_search"]').val();
-
-        $.ajax({
-            type: "GET",
-            url: url,
-            data: { keyword: $(this).val() },
-            success: function(response){
-                $("#resultSearchProduct").html(response);
-            },
-            error: function(response){
-                handleAjaxError(response);
-            }
-        })
-    }))
-</script>
-
-@stack('custom-js')
-
+<script defer src="{{ asset('/libs/jquery/jquery.min.js') }}"></script> 
+<script defer src="{{ asset('libs/swiper/js/swiper.min.js') }}"></script> 
+<script defer src=" https://cdn.jsdelivr.net/npm/swiper@11/swiper-element
+bundle.min.js"></script> 
+ 
+<script defer src="{{ asset('/libs/tabler/dist/js/tabler.min.js') }}"></script> 
+<script defer src="{{ asset('libs/owlcarousel/js/owl.carousel.min.js') 
+}}"></script> 
+ 
+<script defer src="{{ asset('/libs/dropzone/js/dropzone.min.js') }}"></script> 
+<script defer src="{{ asset('/libs/fancybox/fancybox.umd.js') }}"></script> 
+<script defer src="{{ asset('/libs/rateyo/js/rateyo.min.js') }}"></script> 
+<script defer src="{{ asset('/libs/virtualselect/js/virtual-select.min.js') 
+}}"></script> 
+<script defer src="{{ asset('/libs/virtualselect/js/tooltip.min.js') }}"></script> 
+<script defer src="{{ asset('public/assets/js/scripts.js') }}"></script> 

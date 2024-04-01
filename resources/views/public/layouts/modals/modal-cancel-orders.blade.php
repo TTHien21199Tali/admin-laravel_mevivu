@@ -26,7 +26,7 @@
                                 Xác nhận
                             </a></div>
                     </div>
-                </div>
+      bât          </div>
             </div>
         </div>
     </div>

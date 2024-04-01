@@ -29,8 +29,8 @@ $config['authentication'] = '\App\Admin\Http\Middleware\CustomCKFinderAuth';
 /*============================ License Key ============================================*/
 // http://docs.cksource.com/ckfinder3-php/configuration.html#configuration_options_licenseKey
 
-$config['licenseName'] = 'localhost:8080/gb/admin-laravel_mevivu';
-$config['licenseKey']  = 'JW3WCTUYKECKJLCPX69MN6V534YG9';
+$config['licenseName'] = 'http://localhost/admin_test/admin-laravel_mevivu';
+$config['licenseKey']  = 'LCCC1VS4HH96NJTK7VV815N8PYJCU';
 
 /*============================ CKFinder Internal Directory ============================*/
 // http://docs.cksource.com/ckfinder3-php/configuration.html#configuration_options_privateDir
