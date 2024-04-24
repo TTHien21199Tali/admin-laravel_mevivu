@@ -16,6 +16,8 @@
     "admin": "Admin",
     "parent": "Cha",
     "status": "Trạng thái",
+    "featured": "Nổi bật",
+    "is_featured":"Nổi bật",
     "position": "Vị trí",
     "listAdmin": "Danh sách admin",
     "infoAdmin": "Thông tin admin",

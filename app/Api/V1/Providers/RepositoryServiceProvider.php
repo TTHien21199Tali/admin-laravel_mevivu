@@ -12,6 +12,7 @@ class RepositoryServiceProvider extends ServiceProvider
         // 'App\Api\V1\Repositories\Slider\SliderItemRepositoryInterface' => 'App\Api\V1\Repositories\Slider\SliderItemRepository',
         'App\Api\V1\Repositories\Post\PostRepositoryInterface' => 'App\Api\V1\Repositories\Post\PostRepository',
         'App\Api\V1\Repositories\Category\CategoryRepositoryInterface' => 'App\Api\V1\Repositories\Category\CategoryRepository',
+        'App\Api\V1\Repositories\Posts1\Post1RepositoryInterface' => 'App\Api\V1\Repositories\Posts1\Post1Repository',
     ];
     /**
      * Register services.

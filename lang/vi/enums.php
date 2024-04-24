@@ -3,6 +3,8 @@
 use App\Enums\Admin\AdminRoles;
 use App\Enums\DefaultStatus;
 use App\Enums\Gender;
+use App\Enums\Is_featured;
+
 
 return [
     AdminRoles::class => [
@@ -17,5 +19,11 @@ return [
     DefaultStatus::class => [
         DefaultStatus::Published->value => 'Đã xuất bản',
         DefaultStatus::Draft->value => 'Bản nháp'
-    ]
+    ],
+    
+    Is_featured::class => [
+        Is_featured::Yes->value => 'Có',
+        Is_featured::No->value => 'Không'
+    ],
+
 ];

@@ -24,5 +24,8 @@ CKEDITOR.editorConfig = function( config ) {
     config.filebrowserFlashUploadUrl = domain +'/admin/quan-ly-file/ket-noi?command=QuickUpload&type=Files';
 	config.height = 300;
 
+    // Disable clipboard_handleImages option//phân thêm chuyên trang thái về false
+    // config.clipboard_handleImages = false;
+
     config.removePlugins = 'a11yhelp,about,bidi,blockquote,colordialog,copyformatting,dialogadvtab,div,elementspath,exportpdf,find,floatingspace,forms,horizontalrule,indentblock,magicline,maximize,newpage,pagebreak,pastefromgdocs,pastefromlibreoffice,pastefromword,pastetext,preview,print,removeformat,scayt,selectall,showblocks,showborders,smiley,specialchar,stylescombo,tab,templates,undo,save,language';
 };

@@ -248,4 +248,55 @@ return [
             'addClass' => 'text-center'
         ],
     ],
+
+    'post1' => [
+        'checkbox' => [
+            'title' => 'choose',
+            'orderable' => false,
+            'addClass' => 'text-center',
+            'width' => '10px',
+            'footer' => '<input type="checkbox" class="check-all" />',
+        ],
+        'image' => [
+            'title' => 'image',
+            'orderable' => false,
+            'addClass' => 'align-middle',
+           
+        ],
+        'title' => [
+            'title' => 'title',
+            'orderable' => false,
+            'addClass' => 'align-middle',
+            
+        ],
+        'status' => [
+            'title' => 'status',
+            'orderable' => false,
+            'addClass' => 'align-middle',
+          
+        ],
+
+        'is_featured' => [
+            'title' => 'is_featured',
+            'orderable' => false,
+            'addClass' => 'align-middle',
+          
+        ],
+       
+        'created_at' => [
+            'title' => 'createdAt',
+            'orderable' => false,
+            'addClass' => 'align-middle',
+            'visible' => false
+        ],
+        'action' => [
+            'title' => 'action',
+            'orderable' => false,
+            'exportable' => false,
+            'printable' => false,
+            'addClass' => 'text-center align-middle'
+        ],
+    ],
 ];
+
+ 

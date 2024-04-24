@@ -9,6 +9,7 @@ class RepositoryServiceProvider extends ServiceProvider
     protected $repositories = [
         'App\Repositories\Setting\SettingRepositoryInterface' => 'App\Repositories\Setting\SettingRepository',
         'App\Repositories\Blog\PostRepositoryInterface' => 'App\Repositories\Blog\PostRepository',
+        'App\Repositories\Post1RepositoryInterface' => 'App\Repositories\Post1Repository',
     ];
 
     /**

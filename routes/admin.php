@@ -93,6 +93,7 @@ Route::group(['middleware' => 'admin.auth.admin:admin'], function () {
             });
         });
 
+          
 
     //user
     Route::prefix('/manager-user')->as('user.')->group(function () {
@@ -162,4 +163,18 @@ Route::group(['middleware' => 'admin.auth.admin:admin'], function () {
     });
 
     Route::post('/logout', [App\Admin\Http\Controllers\Auth\LogoutController::class, 'logout'])->name('logout');
+
+    //Post1
+    Route::prefix('/posts1')->as('post1.')->group(function () {
+        Route::controller(App\Admin\Http\Controllers\Post1\Post1Controller::class)->group(function () {
+            Route::get('/', 'index')->name('index');
+            Route::get('/add', 'create')->name('create');
+            Route::get('/edit/{id}', 'edit')->name('edit');
+            Route::put('/edit', 'update')->name('update');  
+            Route::post('/add', 'store')->name('store');
+            Route::delete('/delete/{id}', 'delete')->name('delete');
+            Route::post('/action-multile-record', 'actionMultipleRecode')->name('action_multiple_record');
+        });
+    });
+
 });

@@ -11,6 +11,7 @@ return [
         ],
         'sub' => []
     ],
+
     [
         'title' => 'page',
         'routeName' => null,
@@ -156,6 +157,30 @@ return [
                 'icon' => '<i class="ti ti-tool"></i>',
                 'roles' => [],
             ],
+        ]
+    ],
+
+    [
+        'title' => 'Post1',
+        'routeName' => null,
+        'icon' => '<i class="ti ti-notebook"></i>',
+        'roles' => [],
+        'sub' => [
+            [
+                'title' => 'add',
+                'routeName' => 'admin.post1.create',
+                'icon' => '<i class="ti ti-plus"></i>',
+                'roles' => [
+                    App\Enums\Admin\AdminRoles::SuperAdmin,
+                    App\Enums\Admin\AdminRoles::Admin
+                ],
+            ],
+            [
+                'title' => 'list',
+                'routeName' => 'admin.post1.index',
+                'icon' => '<i class="ti ti-list"></i>',
+                'roles' => [],
+            ]
         ]
     ],
 ];

@@ -4,12 +4,11 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use App\Supports\Eloquent\Sluggable;
 use App\Enums\DefaultStatus;
 
 class Post extends Model
 {
-    use HasFactory, Sluggable;
+    use HasFactory;
 
     protected $table = 'posts';
     protected $guarded = [];

@@ -16,6 +16,8 @@
     "admin": "Admin",
     "parent": "Parent",
     "status": "Status",
+    "featured": "featured",
+    "is_featured":"is_featured",
     "position": "Position",
     "listAdmin": "List admin",
     "infoAdmin": "Infomation admin",

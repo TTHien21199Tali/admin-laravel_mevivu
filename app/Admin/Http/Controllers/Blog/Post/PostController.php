@@ -109,7 +109,7 @@ class PostController extends Controller
     public function update(PostRequest $request){
 
         $response = $this->service->update($request);
-
+        dd($request);
         if($response){
             return $request->input('submitter') == 'save' 
                     ? back()->with('success', __('notifySuccess'))
